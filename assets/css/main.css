@@ -1,26 +1,40 @@
-li{
-    list-style: none;
+nav{
+    display: flex;
+    flex-wrap: wrap;
 }
 figure{
+    cursor: pointer; 
+
     position: relative;
+    width: 33vw;
+    height: 33vw;
     margin: 0;
+
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
-figure:hover{
-    opacity: .8;
-}
-figure img{
-    height: 400px;
-    margin: 0;
-}
+    figure:hover{
+        opacity: .8;
+    }
+    figure:hover figcaption{
+        display: block;
+    }
 figcaption{
+    display: none;
     position: absolute;
     bottom: 10%;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, .8);
+
+    background-color: rgba(0, 0, 0, .8);
+
     padding: 10px 30px;
-    text-align: center;
     margin: 0 20px;
+
+    text-align: center;
+    
     font-size: 50px;
     font-weight: lighter;
 }
